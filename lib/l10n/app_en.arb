@@ -1,0 +1,138 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "Little Steps",
+
+  "commonCancel": "Cancel",
+  "commonSave": "Save",
+  "commonDelete": "Delete",
+  "commonDone": "Done",
+  "commonContinue": "Continue",
+
+  "stickerBook": "Sticker book",
+  "stickerBookProgress": "{owned} of {total} friends",
+  "@stickerBookProgress": {
+    "placeholders": {
+      "owned": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "stickerLocked": "Finish a routine to meet this friend",
+  "totalStars": "{count, plural, =0{No stars yet} =1{1 star} other{{count} stars}}",
+  "@totalStars": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+
+  "parentArea": "Grown-ups",
+  "progressLabel": "{done} of {total}",
+  "@progressLabel": {
+    "placeholders": {
+      "done": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "childEmptyRoutine": "No tasks yet. Ask a grown-up to add some!",
+  "childNoRoutines": "No routines yet. Ask a grown-up to make one!",
+  "semanticHear": "Hear {name}",
+  "@semanticHear": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "semanticMarkDone": "Mark {name} as done",
+  "@semanticMarkDone": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "semanticMarkNotDone": "Mark {name} as not done",
+  "@semanticMarkNotDone": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+
+  "celebrateTitle": "Great job!",
+  "celebrateBody": "You finished everything!",
+  "celebrateNewSticker": "A new friend joined your sticker book!",
+  "celebrateAllCollected": "You have met every friend!",
+  "celebrateButton": "Yay!",
+
+  "gateTitle": "For grown-ups",
+  "gateQuestion": "What is {a} × {b}?",
+  "@gateQuestion": {
+    "placeholders": {
+      "a": {"type": "int"},
+      "b": {"type": "int"}
+    }
+  },
+  "gateAnswerLabel": "Answer",
+  "gateWrong": "Not quite. Try again.",
+
+  "parentTitle": "Grown-ups' area",
+  "tabRoutines": "Routines",
+  "tabMyCards": "My cards",
+  "tabSettings": "Settings",
+
+  "presetMorning": "Morning",
+  "presetEvening": "Evening",
+  "newRoutine": "New routine",
+  "taskCount": "{count, plural, =0{No tasks} =1{1 task} other{{count} tasks}}",
+  "@taskCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+
+  "editRoutine": "Edit routine",
+  "routineNameLabel": "Routine name",
+  "routineIconLabel": "Icon",
+  "tasksHeader": "Tasks",
+  "addCards": "Add cards",
+  "reorderHint": "Drag the handle to change the order.",
+  "removeTask": "Remove",
+  "deleteRoutine": "Delete routine",
+  "deleteRoutineConfirm": "Delete “{name}”? This cannot be undone.",
+  "@deleteRoutineConfirm": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "editorEmptyRoutine": "No tasks yet. Tap “Add cards” to start.",
+
+  "pickCards": "Choose cards",
+  "groupMorning": "Morning",
+  "groupSchool": "School",
+  "groupCare": "Meals & care",
+  "groupHome": "Home & bedtime",
+  "groupCustom": "My cards",
+  "pickerNoCustomCards": "You have not made any cards yet. Create one in “My cards”.",
+
+  "newCard": "New card",
+  "cardNameLabel": "Card name",
+  "takePhoto": "Take photo",
+  "choosePhoto": "Choose photo",
+  "cardNeedsPhoto": "Add a photo first.",
+  "cardNeedsName": "Enter a name.",
+  "photoError": "That photo could not be loaded.",
+  "deleteCard": "Delete card",
+  "deleteCardConfirm": "Delete “{name}”? It will be removed from every routine.",
+  "@deleteCardConfirm": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "myCardsEmpty": "Make your own cards with a photo and a name.",
+
+  "settingsLanguage": "Language",
+  "languageSystem": "System",
+  "settingsSpeech": "Read card names aloud",
+  "settingsResetToday": "Reset today's progress",
+  "settingsResetConfirm": "Clear every star earned today?",
+  "settingsResetDone": "Today's progress was reset.",
+  "settingsPrivacyTitle": "Privacy",
+  "settingsPrivacyBody": "This app collects no data. Photos and progress stay on this device.",
+  "settingsLicenses": "Licenses and credits"
+}

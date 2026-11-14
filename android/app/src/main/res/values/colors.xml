@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#4F6DF5</color>
+    <!-- Matches the app's background so startup does not flash white. -->
+    <color name="launch_background">#FFF7E8</color>
+</resources>
