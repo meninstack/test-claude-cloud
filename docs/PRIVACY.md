@@ -1,6 +1,6 @@
 # Privacy policy · Chính sách quyền riêng tư
 
-*Little Steps (Bước Nhỏ)*
+*Little Steps (Từng bước nhỏ)*
 
 ## English
 
@@ -26,7 +26,7 @@ on a server. Uninstalling the app removes everything it stored.
 
 ## Tiếng Việt
 
-Bước Nhỏ không thu thập, truyền đi hay chia sẻ bất kỳ dữ liệu cá nhân nào.
+Từng bước nhỏ không thu thập, truyền đi hay chia sẻ bất kỳ dữ liệu cá nhân nào.
 
 - **Không có tài khoản.** Ứng dụng không yêu cầu đăng nhập, không hỏi tên,
   email hay tuổi.

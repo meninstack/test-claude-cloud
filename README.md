@@ -1,4 +1,4 @@
-# Little Steps · Bước Nhỏ
+# Little Steps · Từng bước nhỏ
 
 A visual daily-routine board for young children, for phones and tablets.
 A grown-up lines up picture cards ("Wake up", "Brush teeth", "Pack my bag");

@@ -10,7 +10,7 @@ class AppLocalizationsVi extends AppLocalizations {
   AppLocalizationsVi([String locale = 'vi']) : super(locale);
 
   @override
-  String get appTitle => 'Bước Nhỏ';
+  String get appTitle => 'Từng bước nhỏ';
 
   @override
   String get commonCancel => 'Hủy';

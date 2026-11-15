@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "io.github.vinhins.little_steps"
+    namespace = "vn.vinh_hoa.little_steps"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -16,7 +16,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "io.github.vinhins.little_steps"
+        applicationId = "vn.vinh_hoa.little_steps"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion

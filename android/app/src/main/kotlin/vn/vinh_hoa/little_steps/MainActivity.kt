@@ -1,4 +1,4 @@
-package io.github.vinhins.little_steps
+package vn.vinh_hoa.little_steps
 
 import io.flutter.embedding.android.FlutterActivity
 

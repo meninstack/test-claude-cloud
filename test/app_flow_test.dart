@@ -444,7 +444,7 @@ void main() {
 
       await pumpApp(tester, environment);
 
-      expect(find.text('Bước Nhỏ'), findsOneWidget);
+      expect(find.text('Từng bước nhỏ'), findsOneWidget);
       expect(find.text('Buổi sáng'), findsOneWidget);
       expect(find.text('Đánh răng'), findsOneWidget);
     });
