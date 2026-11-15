@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
+import 'package:flutter/rendering.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:little_steps/app.dart';
@@ -448,6 +449,23 @@ void main() {
       expect(find.text('Buổi sáng'), findsOneWidget);
       expect(find.text('Đánh răng'), findsOneWidget);
     });
+
+    testWidgets(
+      'shows the whole Vietnamese name beside the board on a tablet',
+      (tester) async {
+        tester.platformDispatcher.localesTestValue = const [Locale('vi', 'VN')];
+        addTearDown(tester.platformDispatcher.clearLocalesTestValue);
+
+        await pumpApp(tester, environment, size: tabletSize);
+
+        // The rail beside the board is narrow. The name shrinks to fit it
+        // rather than ending in an ellipsis.
+        final name = tester.renderObject<RenderParagraph>(
+          find.text('Từng bước nhỏ'),
+        );
+        expect(name.didExceedMaxLines, isFalse);
+      },
+    );
 
     testWidgets('falls back to English on an unsupported device language', (
       tester,

@@ -190,12 +190,17 @@ class _Brand extends StatelessWidget {
           child: const Icon(Icons.star_rounded, color: Colors.white, size: 28),
         ),
         const SizedBox(width: 10),
+        // The name is never cut short. Where there is too little room for it,
+        // on the tablet rail or a small phone, it shrinks to fit.
         Flexible(
-          child: Text(
-            AppLocalizations.of(context).appTitle,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: Theme.of(context).textTheme.titleLarge,
+          child: FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: AlignmentDirectional.centerStart,
+            child: Text(
+              AppLocalizations.of(context).appTitle,
+              maxLines: 1,
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
           ),
         ),
       ],

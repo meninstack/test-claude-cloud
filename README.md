@@ -93,7 +93,7 @@ lib/
 flutter pub get
 flutter run                 # a connected phone, tablet or emulator
 flutter run -d chrome       # in a browser
-flutter test                # 57 unit and widget tests
+flutter test                # 58 unit and widget tests
 ```
 
 Continuous integration (`.github/workflows/ci.yml`) checks formatting,
