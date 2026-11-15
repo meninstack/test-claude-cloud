@@ -1,0 +1,48 @@
+name: little_steps
+description: "Bảng lịch trình hằng ngày bằng hình ảnh cho trẻ nhỏ. Miễn phí, chạy offline, không quảng cáo."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.14.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  material_ui: ^1.1.0
+  flutter_riverpod: ^3.5.0
+  shared_preferences: ^2.5.6
+  path_provider: ^2.1.6
+  image_picker: ^1.2.4
+  flutter_tts: ^4.2.5
+  flutter_svg: ^2.4.0
+  intl: ^0.20.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  shared_preferences_platform_interface: ^2.4.2
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/cards/
+    - assets/icons/
+    - assets/stickers/
+    - assets/fonts/OFL.txt
+
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/Nunito-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Nunito-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Nunito-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Nunito-Black.ttf
+          weight: 900

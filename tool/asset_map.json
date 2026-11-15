@@ -1,0 +1,27 @@
+{
+  "cards": {
+    "wake_up": "23f0", "make_bed": "1f6cf", "toilet": "1f6bd", "brush_teeth": "1faa5",
+    "wash_face": "1fae7", "get_dressed": "1f455", "comb_hair": "1faae", "breakfast": "1f373",
+    "drink_milk": "1f95b",
+    "pack_bag": "1f392", "put_on_shoes": "1f45f", "wear_hat": "1f9e2", "go_to_school": "1f3eb",
+    "homework": "270f", "read_book": "1f4d6", "draw": "1f3a8", "practice_music": "1f3b9",
+    "say_hello": "1f44b",
+    "wash_hands": "1f9fc", "eat_lunch": "1f35a", "eat_dinner": "1f372", "eat_fruit": "1f34e",
+    "drink_water": "1f4a7", "take_bath": "1f6c1", "wash_hair": "1f9f4", "take_medicine": "1f48a",
+    "nap": "1f634",
+    "tidy_toys": "1f9f8", "water_plants": "1fab4", "feed_pet": "1f9b4", "set_table": "1f37d",
+    "laundry_basket": "1f9fa", "play_outside": "26bd", "exercise": "1f938", "screen_time": "1f4fa",
+    "story_time": "1f4da", "hug": "1f917", "turn_off_light": "1f4a1", "go_to_sleep": "1f6cc"
+  },
+  "icons": {
+    "sun": "1f31e", "moon": "1f319", "school": "1f3eb", "house": "1f3e0",
+    "star": "2b50", "rainbow": "1f308", "rocket": "1f680", "balloon": "1f388"
+  },
+  "stickers": {
+    "dog": "1f436", "cat": "1f431", "rabbit": "1f430", "panda": "1f43c", "fox": "1f98a",
+    "bear": "1f43b", "koala": "1f428", "tiger": "1f42f", "lion": "1f981", "cow": "1f42e",
+    "pig": "1f437", "frog": "1f438", "monkey": "1f435", "chick": "1f425", "penguin": "1f427",
+    "owl": "1f989", "unicorn": "1f984", "turtle": "1f422", "dolphin": "1f42c", "whale": "1f433",
+    "butterfly": "1f98b", "ladybug": "1f41e", "dinosaur": "1f995", "elephant": "1f418"
+  }
+}

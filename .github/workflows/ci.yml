@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+    branches: [main, "claude/**"]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      # Gradle has to run on JDK 21: the lint bundled with the Android Gradle
+      # Plugin calls List.removeLast(), which JDK 17 does not have. The app
+      # itself still compiles to Java 17 bytecode.
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: "3.50.0"
+          cache: true
+
+      - run: flutter pub get
+
+      - name: Check formatting
+        run: dart format --output=none --set-exit-if-changed lib test
+
+      - run: flutter analyze
+
+      - run: flutter test
+
+      # Signed with the debug key (see android/app/build.gradle.kts), so the
+      # APK installs for testing but cannot be uploaded to a store.
+      - name: Build Android APK
+        run: flutter build apk --release
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: little-steps-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+          if-no-files-found: error
