@@ -5,7 +5,7 @@
     "display": "standalone",
     "background_color": "#FFF7E8",
     "theme_color": "#4F6DF5",
-    "description": "A visual daily-routine board for young children. Free, offline, no ads.",
+    "description": "Bảng lịch trình hằng ngày bằng hình ảnh cho trẻ nhỏ. Miễn phí, chạy offline, không quảng cáo.",
     "orientation": "any",
     "prefer_related_applications": false,
     "icons": [

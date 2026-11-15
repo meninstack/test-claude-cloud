@@ -1,30 +1,6 @@
-# Privacy policy · Chính sách quyền riêng tư
+# Chính sách quyền riêng tư
 
-*Little Steps (Từng bước nhỏ)*
-
-## English
-
-Little Steps does not collect, transmit or share any personal data.
-
-- **No accounts.** The app has no sign-in and asks for no name, email or age.
-- **No tracking.** The app contains no analytics, advertising or
-  crash-reporting software, and shows no ads.
-- **No network use.** The app works fully offline and does not send anything
-  to a server.
-- **Photos stay on the device.** When a grown-up makes a card from a photo,
-  the picture is saved in the app's private storage on that device. It is
-  not uploaded anywhere. Deleting the card deletes the photo.
-- **Camera and photo library** are used only when a grown-up chooses "Take
-  photo" or "Choose photo" while making a card.
-- **Reading aloud** uses the text-to-speech engine already on the device.
-  How that engine handles text is governed by its own provider's policy.
-- **Routines, progress and stickers** are stored on the device and are
-  removed when the app is uninstalled.
-
-Because nothing is collected, there is nothing to request, export or delete
-on a server. Uninstalling the app removes everything it stored.
-
-## Tiếng Việt
+*Little Steps · Từng bước nhỏ*
 
 Từng bước nhỏ không thu thập, truyền đi hay chia sẻ bất kỳ dữ liệu cá nhân nào.
 
@@ -46,3 +22,27 @@ Từng bước nhỏ không thu thập, truyền đi hay chia sẻ bất kỳ d�
 
 Vì không có dữ liệu nào được thu thập nên không có gì để yêu cầu, xuất hay
 xóa trên máy chủ. Gỡ ứng dụng sẽ xóa mọi thứ ứng dụng đã lưu.
+
+## English
+
+*Bản dịch cho người dùng ứng dụng bằng tiếng Anh.*
+
+Little Steps does not collect, transmit or share any personal data.
+
+- **No accounts.** The app has no sign-in and asks for no name, email or age.
+- **No tracking.** The app contains no analytics, advertising or
+  crash-reporting software, and shows no ads.
+- **No network use.** The app works fully offline and does not send anything
+  to a server.
+- **Photos stay on the device.** When a grown-up makes a card from a photo,
+  the picture is saved in the app's private storage on that device. It is
+  not uploaded anywhere. Deleting the card deletes the photo.
+- **Camera and photo library** are used only when a grown-up chooses "Take
+  photo" or "Choose photo" while making a card.
+- **Reading aloud** uses the text-to-speech engine already on the device.
+  How that engine handles text is governed by its own provider's policy.
+- **Routines, progress and stickers** are stored on the device and are
+  removed when the app is uninstalled.
+
+Because nothing is collected, there is nothing to request, export or delete
+on a server. Uninstalling the app removes everything it stored.

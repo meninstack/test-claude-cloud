@@ -1,136 +1,140 @@
 # Little Steps · Từng bước nhỏ
 
-A visual daily-routine board for young children, for phones and tablets.
-A grown-up lines up picture cards ("Wake up", "Brush teeth", "Pack my bag");
-the child hears each one, taps a star when it is done, and wins an animal
-sticker for finishing the whole routine.
+Bảng lịch trình hằng ngày bằng hình ảnh cho trẻ nhỏ, dùng trên điện thoại và
+tablet. Ba mẹ xếp các thẻ hình ("Thức dậy", "Đánh răng", "Soạn cặp"); trẻ
+nghe tên từng việc, chạm vào ngôi sao khi làm xong, và nhận một nhãn dán con
+vật khi hoàn thành cả lịch trình.
 
-Free, offline, no ads, no purchases, no accounts, no data collected.
+Miễn phí, chạy offline, không quảng cáo, không mua hàng trong ứng dụng,
+không tài khoản, không thu thập dữ liệu.
 
-| Board | Reward | Sticker book | Routine editor | Card picker |
+| Bảng việc | Phần thưởng | Sổ nhãn dán | Sửa lịch trình | Chọn thẻ |
 |---|---|---|---|---|
-| ![Board on a phone](docs/screenshots/phone-board.png) | ![Celebration](docs/screenshots/phone-celebration.png) | ![Sticker book](docs/screenshots/phone-stickers.png) | ![Routine editor](docs/screenshots/phone-editor.png) | ![Card picker](docs/screenshots/phone-picker.png) |
+| ![Bảng việc trên điện thoại](docs/screenshots/phone-board.png) | ![Màn hình chúc mừng](docs/screenshots/phone-celebration.png) | ![Sổ nhãn dán](docs/screenshots/phone-stickers.png) | ![Màn hình sửa lịch trình](docs/screenshots/phone-editor.png) | ![Màn hình chọn thẻ](docs/screenshots/phone-picker.png) |
 
-![Board on a tablet, in Vietnamese](docs/screenshots/tablet-board.png)
+![Bảng việc trên tablet, giao diện tiếng Việt](docs/screenshots/tablet-board.png)
 
-## What it does
+## Ứng dụng làm được gì
 
-**For the child**
+**Dành cho trẻ**
 
-- One big card per task, in order, with a number, a picture and a name.
-- Tap a card to hear its name. Tap its star to mark it done.
-- A progress bar fills as stars are earned.
-- Finishing a routine sets off a celebration and adds one new animal friend
-  to the sticker book (24 to collect).
-- The board starts fresh every morning.
+- Mỗi việc là một thẻ lớn, xếp theo thứ tự, có số, hình và tên.
+- Chạm vào thẻ để nghe tên việc. Chạm vào ngôi sao của thẻ để đánh dấu đã
+  xong.
+- Thanh tiến độ đầy dần theo số sao trẻ nhận được.
+- Làm xong một lịch trình, trẻ được chúc mừng và có thêm một bạn thú mới
+  trong sổ nhãn dán (có 24 bạn để sưu tầm).
+- Mỗi sáng, bảng việc bắt đầu lại từ đầu.
 
-**For the grown-up** (behind a multiplication question)
+**Dành cho ba mẹ** (phải trả lời một phép nhân mới vào được)
 
-- Several routines, each with a name and an icon. Morning and Evening are
-  there from the start.
-- 39 built-in cards in four groups: morning, school, meals and care, home and
-  bedtime.
-- Make your own cards from a photo and a name.
-- Drag tasks to reorder them.
-- English and Vietnamese, switchable in the app. Card names are read aloud
-  in the app's language.
+- Nhiều lịch trình, mỗi lịch trình có tên và biểu tượng riêng. Buổi sáng và
+  Buổi tối có sẵn từ đầu.
+- 39 thẻ có sẵn, chia thành bốn nhóm: buổi sáng, đi học, ăn uống và vệ sinh,
+  ở nhà và giờ ngủ.
+- Tự tạo thẻ từ một tấm ảnh và một cái tên.
+- Kéo để đổi thứ tự các việc.
+- Tiếng Việt và tiếng Anh, đổi được ngay trong ứng dụng. Tên thẻ được đọc
+  thành tiếng bằng ngôn ngữ ứng dụng đang dùng.
 
-## Decisions worth pointing out
+## Những quyết định đáng chú ý
 
-- **Hearing a task and finishing it are separate targets.** The card speaks,
-  the star completes. A child who wants to hear "Brush teeth" again cannot
-  tick it off by accident.
-- **A sticker is earned once per routine per day.** Undoing and redoing the
-  last task does not produce another one, and there is no way to collect
-  them without doing the routine.
-- **No recorded audio.** Card names are spoken by the device's own
-  text-to-speech engine, which keeps the download small and gives every
-  language a voice for free. If the device has no voice for the app's
-  language, install one in the system text-to-speech settings.
-- **Nothing leaves the device.** There is no backend, no analytics SDK and
-  no ad SDK. Photos for custom cards are stored in the app's private folder.
-  See the [privacy policy](docs/PRIVACY.md).
-- **One layout, three shapes.** Below 600 px wide the board is a list of
-  rows; above it, a grid of tall tiles; from 840 px the routines move from a
-  strip at the top to a rail at the side.
+- **Nghe tên việc và đánh dấu xong là hai vùng chạm riêng.** Thẻ thì đọc
+  tên, ngôi sao thì đánh dấu xong. Trẻ muốn nghe lại "Đánh răng" sẽ không lỡ
+  tay đánh dấu việc đó là đã xong.
+- **Mỗi lịch trình chỉ cho một nhãn dán mỗi ngày.** Bỏ đánh dấu rồi đánh dấu
+  lại việc cuối cùng không sinh thêm nhãn dán, và không có cách nào nhận
+  nhãn dán mà không làm hết lịch trình.
+- **Không dùng âm thanh thu sẵn.** Tên thẻ được đọc bằng bộ text-to-speech
+  có sẵn trên thiết bị, nhờ đó ứng dụng nhẹ và ngôn ngữ nào cũng có giọng
+  đọc mà không tốn gì thêm. Nếu thiết bị chưa có giọng đọc cho ngôn ngữ của
+  ứng dụng, hãy cài thêm trong phần cài đặt text-to-speech của hệ thống.
+- **Không có gì rời khỏi thiết bị.** Không backend, không analytics SDK,
+  không ad SDK. Ảnh của thẻ tự tạo được lưu trong thư mục riêng của ứng
+  dụng. Xem [chính sách quyền riêng tư](docs/PRIVACY.md).
+- **Một bố cục, ba hình dạng.** Màn hình hẹp hơn 600 px: bảng việc là một
+  danh sách các hàng. Từ 600 px trở lên: một lưới các ô cao. Từ 840 px: các
+  lịch trình chuyển từ dải ngang phía trên sang cột bên cạnh.
 
-## How it is built
+## Cấu trúc mã nguồn
 
-Flutter 3.50 (Dart 3.14), one codebase for Android, iOS and the web.
+Flutter 3.50 (Dart 3.14), một codebase cho Android, iOS và web.
 
 ```
 lib/
-  main.dart               opens storage, starts the app
-  app.dart                MaterialApp, locale, day rollover on resume
-  core/                   theme, breakpoints, clock, ids, licences
+  main.dart               mở bộ lưu trữ, khởi động ứng dụng
+  app.dart                MaterialApp, locale, sang ngày mới khi mở lại ứng dụng
+  core/                   theme, breakpoint, đồng hồ, id, giấy phép
   data/
     models.dart           Routine, RoutineItem, CustomCard, DayProgress, AppData
-    card_catalog.dart     built-in cards, routine icons, stickers
-    app_repository.dart   AppData <-> one JSON document in key-value storage
-    image_store*.dart     photos: files on mobile, browser storage on web
+    card_catalog.dart     thẻ có sẵn, biểu tượng lịch trình, nhãn dán
+    app_repository.dart   AppData <-> một tài liệu JSON trong key-value storage
+    image_store*.dart     ảnh: file trên điện thoại, bộ nhớ trình duyệt trên web
   state/
-    app_controller.dart   every rule of the app, as one Riverpod Notifier
-    providers.dart        injectable clock, random, storage, speech
-  services/               text-to-speech, photo picker
-  features/child/         board, task tile, celebration, sticker book
-  features/parent/        gate, routines, editor, card picker, custom cards, settings
-  l10n/                   app_en.arb, app_vi.arb (+ generated code)
+    app_controller.dart   mọi quy tắc của ứng dụng, gói trong một Riverpod Notifier
+    providers.dart        đồng hồ, số ngẫu nhiên, lưu trữ, giọng đọc (thay thế được)
+  services/               text-to-speech, chọn ảnh
+  features/child/         bảng việc, ô việc, chúc mừng, sổ nhãn dán
+  features/parent/        cổng ba mẹ, lịch trình, sửa lịch trình, chọn thẻ, thẻ tự tạo, cài đặt
+  l10n/                   app_en.arb, app_vi.arb (+ mã sinh tự động)
 ```
 
-- **State**: `flutter_riverpod`. `AppController` owns an immutable `AppData`
-  and persists it after every change. Time, randomness, storage and speech
-  are providers, so tests replace them.
-- **Storage**: `shared_preferences` holds one small JSON document (routines,
-  card names, one day of progress). Photos are separate files.
-- **Artwork**: [Twemoji](https://github.com/jdecked/twemoji) SVGs rendered
-  with `flutter_svg`. `tool/asset_map.json` maps each file to its emoji.
-- **Icon**: drawn by `tool/make_icon.py`, which also writes every Android,
-  iOS and web icon size.
+- **State**: `flutter_riverpod`. `AppController` giữ một `AppData` bất biến
+  và lưu lại sau mỗi thay đổi. Thời gian, số ngẫu nhiên, lưu trữ và giọng
+  đọc đều là provider, nên test thay chúng bằng bản giả được.
+- **Lưu trữ**: `shared_preferences` giữ một tài liệu JSON nhỏ (các lịch
+  trình, tên thẻ, tiến độ của một ngày). Ảnh là các file riêng.
+- **Hình vẽ**: SVG của [Twemoji](https://github.com/jdecked/twemoji), hiển
+  thị bằng `flutter_svg`. `tool/asset_map.json` cho biết file nào ứng với
+  emoji nào.
+- **Icon**: do `tool/make_icon.py` vẽ; script này cũng xuất mọi kích thước
+  icon cho Android, iOS và web.
 
-## Run it
+## Chạy ứng dụng
 
 ```sh
 flutter pub get
-flutter run                 # a connected phone, tablet or emulator
-flutter run -d chrome       # in a browser
-flutter test                # 58 unit and widget tests
+flutter run                 # điện thoại, tablet hoặc emulator đang kết nối
+flutter run -d chrome       # trong trình duyệt
+flutter test                # 58 unit test và widget test
 ```
 
-Continuous integration (`.github/workflows/ci.yml`) checks formatting,
-analyses, runs the tests and builds a release APK, which it attaches to the
-run as a downloadable artifact.
+CI (`.github/workflows/ci.yml`) kiểm tra định dạng mã, chạy analyze, chạy
+test và build một APK bản release, đính kèm vào lần chạy dưới dạng artifact
+tải về được.
 
-## Tests
+## Test
 
-`test/app_controller_test.dart` covers the rules: stars, the
-one-sticker-per-day rule, the new-day reset, editing routines, custom cards,
-and saving. `test/app_flow_test.dart` drives the real UI: the board, the
-celebration, the parental gate, the editor (including drag-to-reorder), the
-card picker, making a card from a photo, switching language, and layout on
-five screen sizes from a 320 px phone to a landscape tablet.
-`test/app_repository_test.dart` covers storage, including damaged data.
+`test/app_controller_test.dart` kiểm tra các quy tắc: ngôi sao, quy tắc mỗi
+ngày một nhãn dán, đặt lại khi sang ngày mới, sửa lịch trình, thẻ tự tạo và
+việc lưu dữ liệu. `test/app_flow_test.dart` chạy giao diện thật: bảng việc,
+màn hình chúc mừng, cổng ba mẹ, màn hình sửa lịch trình (cả kéo để đổi thứ
+tự), chọn thẻ, tạo thẻ từ ảnh, đổi ngôn ngữ, và bố cục trên năm kích thước
+màn hình, từ điện thoại 320 px tới tablet nằm ngang.
+`test/app_repository_test.dart` kiểm tra việc lưu trữ, kể cả khi dữ liệu bị
+hỏng.
 
-## Status
+## Tình trạng
 
-This is a first MVP. The web build has been exercised end to end in Chrome.
-The Android APK is built by CI but has not yet been run on a physical
-device, and the iOS project has not been built.
+Đây là bản MVP đầu tiên. Bản web đã được chạy thử từ đầu đến cuối trên
+Chrome. APK Android do CI build nhưng chưa được chạy trên thiết bị thật, và
+project iOS chưa được build.
 
-Not in this version: voice recording for custom cards, a visual countdown
-timer per task, reminders, profiles for several children, and weekly
-history.
+Chưa có trong bản này: thu âm giọng nói cho thẻ tự tạo, đồng hồ đếm ngược
+cho từng việc, nhắc nhở, hồ sơ cho nhiều trẻ, và lịch sử theo tuần.
 
-Before publishing to a store: replace the debug signing config in
-`android/app/build.gradle.kts` with a release key, and host
-`docs/PRIVACY.md` at a public URL.
+Trước khi đưa lên store: thay debug signing config trong
+`android/app/build.gradle.kts` bằng release key, và đưa `docs/PRIVACY.md`
+lên một URL công khai.
 
-## Credits
+## Ghi công
 
-- Card, icon and sticker artwork: Twemoji, © Twitter, Inc and other
-  contributors, [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+- Hình vẽ của thẻ, biểu tượng và nhãn dán: Twemoji, © Twitter, Inc và những
+  người đóng góp khác,
+  [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 - Font: Nunito, © The Nunito Project Authors,
   [SIL Open Font License 1.1](assets/fonts/OFL.txt).
 
-Picture-card routine boards ("visual schedules") are a long-standing tool in
-early-childhood education. This app is an original implementation of that
-idea: its name, code, layout and icon were made for this project.
+Bảng lịch trình bằng thẻ hình ("visual schedule") là công cụ có từ lâu trong
+giáo dục mầm non. Ứng dụng này là một bản hiện thực độc lập của ý tưởng đó:
+tên, mã nguồn, bố cục và icon đều được làm riêng cho dự án này.
